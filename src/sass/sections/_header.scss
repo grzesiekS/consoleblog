@@ -1,0 +1,39 @@
+@import "../variables";
+
+.consoleblog-header-navbar {
+  text-align: center;
+  font-family: $font-russo;
+
+  ul {
+    text-decoration: none;
+    padding: 0;
+  }
+}
+
+.consoleblog-header-navbar_main {
+  li {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 1.3rem;
+    transition: $transiotion-short;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &:hover {
+      cursor: pointer;
+      background-color: $navbar-li-main-hover-bg-color;
+  
+      a {
+        color: $navbar-li-main-hover-text-color;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: $navbar-text-color;
+    }
+  }
+}
