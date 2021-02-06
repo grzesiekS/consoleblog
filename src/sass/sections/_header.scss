@@ -17,7 +17,8 @@
     margin-right: 25px;
     font-size: 1.3rem;
     transition: $transiotion-short;
-  
+    position: relative;
+
     &:last-child {
       margin-right: 0;
     }
@@ -34,6 +35,45 @@
     a {
       text-decoration: none;
       color: $navbar-text-color;
+    }
+  }
+
+  .consoles {
+    &:hover {
+      .consoleblog-header-navbar_console {
+        display: block;
+      }      
+    }
+  }
+}
+
+.consoleblog-header-navbar_console {
+  display: none;
+  position: absolute;
+  margin-top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+
+  li {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .microsoft {
+    &:hover {
+      background-color: green;
+    }
+  }
+
+  .sony {
+    &:hover {
+      background-color: blue;
+    }
+  }
+
+  .nintendo {
+    &:hover {
+      background-color: red;
     }
   }
 }
