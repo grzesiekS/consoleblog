@@ -50,6 +50,7 @@
 .consoleblog-header-navbar_console {
   display: none;
   position: absolute;
+  background-color: $navbar-console-inner-bg-color;
   margin-top: 15px;
   left: 50%;
   transform: translate(-50%);
@@ -93,5 +94,26 @@
         color: white;
       }
     }
+  }
+}
+
+.consoleblog-header-title {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 78px;
+  transform: rotate(-20deg);
+  letter-spacing: 15px;
+  color: $title-header-text-color;
+  font-family: $font-bebas;
+  text-transform: uppercase;
+
+  .transform-title {
+    font-size: 25px;
+    display: inline-block;
+    border: $border-width solid $title-header-border-color;
+    border-radius: $radius-round;
+    letter-spacing: 0;
+    margin: 0 12px 0 0;
+    padding: 0 6px;
   }
 }
