@@ -3,6 +3,9 @@
 /* Colors */
 $exodus-fruit: #6c5ce7;
 $white: #fff;
+$microsoft-green: #7fba00;
+$ninstendo-red: #fe0016;
+$sony-darkblue: #003791;
 
 /* font-style */
 $font-russo: 'Russo One', sans-serif; //normal text
@@ -15,3 +18,6 @@ $transiotion-short: 0.5s all;
 $navbar-text-color: $exodus-fruit;
 $navbar-li-main-hover-bg-color: $exodus-fruit;
 $navbar-li-main-hover-text-color: $white;
+$navbar-console-microsoft-hover-color: $microsoft-green;
+$navbar-console-nintendo-hover-color: $ninstendo-red;
+$navbar-console-sony-hover-color: $sony-darkblue;

@@ -27,12 +27,12 @@
       cursor: pointer;
       background-color: $navbar-li-main-hover-bg-color;
   
-      a {
+      .consoleblog-header-navbar_main__link {
         color: $navbar-li-main-hover-text-color;
       }
     }
   
-    a {
+    .consoleblog-header-navbar_main__link {
       text-decoration: none;
       color: $navbar-text-color;
     }
@@ -53,6 +53,12 @@
   margin-top: 15px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    color: $navbar-text-color;
+  }
 
   li {
     display: block;
@@ -61,19 +67,31 @@
 
   .microsoft {
     &:hover {
-      background-color: green;
+      background-color: $navbar-console-microsoft-hover-color;
+      
+      a {
+        color: white;
+      }
     }
   }
 
   .sony {
     &:hover {
-      background-color: blue;
+      background-color: $navbar-console-sony-hover-color;
+      
+      a {
+        color: white;
+      }
     }
   }
 
   .nintendo {
     &:hover {
-      background-color: red;
+      background-color: $navbar-console-nintendo-hover-color;
+      
+      a {
+        color: white;
+      }
     }
   }
 }
