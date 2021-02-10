@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Colors */
+$exodus-fruit: #6c5ce7;
+$white: #fff;
+$microsoft-green: #7fba00;
+$ninstendo-red: #fe0016;
+$sony-darkblue: #003791;
+$black: #000;
+
+/* font-style */
+$font-russo: 'Russo One', sans-serif; //normal text
+$font-bebas: 'Bebas Neue', cursive; //title text
+
+/* Transition effects */
+$transiotion-long: 1s all;
+$transiotion-short: 0.5s all;
+
+/* Global settings */
+$radius-round: 50%;
+$border-width: 2px;
+$image-slider-width-height: 500px;
+
+//colors
+$container-boxshadow-color: $black;
+$button-text-color: $exodus-fruit;
+
+/* header section */
+//navbar
+$navbar-text-color: $exodus-fruit;
+$navbar-li-main-hover-bg-color: $exodus-fruit;
+$navbar-li-main-hover-text-color: $white;
+$navbar-console-microsoft-hover-color: $microsoft-green;
+$navbar-console-nintendo-hover-color: $ninstendo-red;
+$navbar-console-sony-hover-color: $sony-darkblue;
+$navbar-console-inner-bg-color: $white;
+
+//title
+$title-header-text-color: $white;
+$title-header-border-color: $black;
+$title-container-bg-color: $exodus-fruit;
+
+//image
+$header-img-border-color: $exodus-fruit;
+$header-img-active-shadowbox-color: $exodus-fruit;
+
+//subtitle
+$header-subtitle-color: $exodus-fruit;

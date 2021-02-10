@@ -2,37 +2,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
   <title>ConsoleBlog</title>
+
 </head>
 <body>
   <header class="consoleblog-header">
     <div class="container">
       <nav class="consoleblog-header-navbar">
-        <ul>
-          <li><a href="#">Home icon</a></li>
-          <li><a href="#">Konsole</a></li>
-          <li><a href="#">Gry</a></li>
-          <li><a href="#">Newsy</a></li>
+        <ul class="consoleblog-header-navbar_main">
+          <li><a class="consoleblog-header-navbar_main__link" href="#"><span class="transform-logo">B</span></a></li>
+          <li class="consoles">
+            <a class="consoleblog-header-navbar_main__link" href="#">Konsole</a>
+            <ul class="consoleblog-header-navbar_console">
+              <li class="microsoft">
+                <a href="#">microsoft</a>
+              </li>
+              <li class="sony">
+                <a href="#">sony</a>
+              </li>
+              <li class="nintendo">
+                <a href="#">nintendo</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="consoleblog-header-navbar_main__link link" href="#">Gry</a></li>
+          <li><a class="consoleblog-header-navbar_main__link link" href="#">Newsy</a></li>
         </ul>
       </nav>
-      <h1 class="consoleblog-header-title">ConsoleBlog</h1>
-      <div class="consoleblog-header-slider">
-        <div class="button left">
-          <a href="">Icon</a>
-        </div>
-        <div class="consoleblog-header-slider-img">
-          <img src="" alt="Image-1">
-          <img src="" alt="Image-2">
-          <img src="" alt="Image-3">
-        </div>
-        <div class="button right">
-          <a href="">Icon</a>
-        </div>
+      <div class="consoleblog-header-title_container">
+        <h1 class="consoleblog-header-title">Console<span class="transform-logo">B</span>log</h1>
       </div>
+      <article class="consoleblog-header-slider">
+        <h2 class="consoleblog-header-subtitle">Najlepsze screenshoty z gier</h2>
+        <div class="flex-box centerFlex">
+          <div class="button icon left">
+            <a href=""><i class="far fa-hand-point-left"></i></a>
+          </div>
+          <div class="consoleblog-header-slider-img">
+            <img src="./images/slider/ps4_controller.jpg" alt="Image-1" class="active">
+            <img src="" alt="Image-2">
+            <img src="" alt="Image-3">
+          </div>
+          <div class="button icon right">
+            <a href=""><i class="far fa-hand-point-right"></i></a>
+          </div>
+        </div>
+      </article>
     </div>
   </header>
-  
+
   <script src="js/script.js" type="module"></script>
   <script src="js/app.js" type="module"></script>
 </body>
