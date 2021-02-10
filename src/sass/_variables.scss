@@ -19,7 +19,8 @@ $transiotion-short: 0.5s all;
 
 /* Global settings */
 $radius-round: 50%;
-$border-width: 2px; 
+$border-width: 2px;
+$container-boxshadow-color: $black;
 
 /* header section */
 //navbar
@@ -31,5 +32,6 @@ $navbar-console-nintendo-hover-color: $ninstendo-red;
 $navbar-console-sony-hover-color: $sony-darkblue;
 $navbar-console-inner-bg-color: $white;
 //title
-$title-header-text-color: $exodus-fruit;
+$title-header-text-color: $white;
 $title-header-border-color: $black;
+$title-container-bg-color: $exodus-fruit;
