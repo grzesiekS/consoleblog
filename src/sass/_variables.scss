@@ -21,6 +21,7 @@ $transiotion-short: 0.5s all;
 $radius-round: 50%;
 $border-width: 2px;
 $container-boxshadow-color: $black;
+$image-slider-width-height: 500px;
 
 /* header section */
 //navbar
@@ -31,7 +32,11 @@ $navbar-console-microsoft-hover-color: $microsoft-green;
 $navbar-console-nintendo-hover-color: $ninstendo-red;
 $navbar-console-sony-hover-color: $sony-darkblue;
 $navbar-console-inner-bg-color: $white;
+
 //title
 $title-header-text-color: $white;
 $title-header-border-color: $black;
 $title-container-bg-color: $exodus-fruit;
+
+//image
+$img-border-color: $exodus-fruit;
