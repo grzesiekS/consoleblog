@@ -10,6 +10,15 @@
   }
 }
 
+.transform-logo {
+  font-size: 25px;
+  display: inline-block;
+  border: $border-width solid $title-header-border-color;
+  border-radius: $radius-round;
+  letter-spacing: 0;
+  padding: 2px 10px 0 10px;
+}
+
 .consoleblog-header-navbar_main {
   li {
     display: inline-block;
@@ -108,14 +117,8 @@
   text-transform: uppercase;
   text-shadow: 3px  3px 0 $title-header-border-color, -1px -1px 0 $title-header-border-color, 1px -1px 0 $title-header-border-color, -1px  1px 0 $title-header-border-color, 1px  1px 0 $title-header-border-color;
 
-  .transform-title {
-    font-size: 25px;
-    display: inline-block;
-    border: $border-width solid $title-header-border-color;
-    border-radius: $radius-round;
-    letter-spacing: 0;
+  .transform-logo {
     margin: 0 12px 0 0;
-    padding: 2px 10px 0 10px;
   }
 }
 
@@ -131,4 +134,8 @@
     height: 500%;
     z-index: -100;
   }
+}
+
+.consoleblog-header-slider {
+  margin: 25vh auto 0;
 }
