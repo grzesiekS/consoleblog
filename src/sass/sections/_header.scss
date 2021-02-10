@@ -146,11 +146,18 @@
     height: $image-slider-width-height;
     object-fit: cover;
     display: none;
-    border: $border-width solid $img-border-color;
+    border: $border-width solid $header-img-border-color;
 
     &.active {
       display: block;
-      box-shadow: 5px 5px 11px 2px #6C5CE7;
+      box-shadow: 5px 5px 11px 2px $header-img-active-shadowbox-color;
     }
   }
+}
+
+.consoleblog-header-subtitle {
+  text-align: center;
+  font-size: 25px;
+  font-family: $font-bebas;
+  color: $header-subtitle-color;
 }
