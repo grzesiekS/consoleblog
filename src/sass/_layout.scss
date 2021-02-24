@@ -22,4 +22,8 @@ body, html {
     justify-content: center;
     align-items: center;
   }
+
+  &.spaceAround {
+    justify-content: space-around;
+  }
 }

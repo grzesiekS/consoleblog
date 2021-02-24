@@ -147,6 +147,11 @@
     object-fit: cover;
     display: none;
     border: $border-width solid $header-img-border-color;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &.active {
       display: block;
