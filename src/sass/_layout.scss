@@ -12,7 +12,7 @@ body, html {
   max-width: 1360px;
   margin: 0 auto;
   padding: 15px 0;
-  box-shadow: 5px 5px 5px 0px $container-boxshadow-color, inset 4px 4px 15px 0px $container-boxshadow-color, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 15px -4px rgba(0, 0, 0, 0.8);
 }
 
 .flex-box {
