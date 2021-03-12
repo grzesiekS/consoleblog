@@ -7,5 +7,9 @@ export const select = {
       rightButton: '.header-slider .right a',
       img: '.header-slider-img img'
     }
+  },
+  latestGamesElements: {
+    latestGames: '.latestGames',
+    latestGames_game_img: '.latestGames-game_img'
   }
 };
