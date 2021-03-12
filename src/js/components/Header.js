@@ -12,9 +12,7 @@ class Header {
     thisHeader.sliderPageCount = Math.ceil(thisHeader.dom.headerSliderImg.length/thisHeader.pictureInPage);
     thisHeader.sliderCurrentPage = 0;
 
-    thisHeader.selectedImgs = 
-      Array.from(thisHeader.dom.headerSliderImg)
-        .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+    
   }
 
   handleLeftButtonAction() {
@@ -22,6 +20,13 @@ class Header {
 
     thisHeader.dom.leftButton.addEventListener('click', event => {
       event.preventDefault();
+
+      if(thisHeader.sliderCurrentPage > 0) thisHeader.sliderCurrentPage--;
+
+      thisHeader.selectedImgs = 
+      Array.from(thisHeader.dom.headerSliderImg)
+        .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+
       console.log(thisHeader.selectedImgs);
     });
   }
@@ -31,6 +36,13 @@ class Header {
 
     thisHeader.dom.rightButton.addEventListener('click', event => {
       event.preventDefault();
+      
+      if(thisHeader.sliderCurrentPage < thisHeader.sliderPageCount - 1) thisHeader.sliderCurrentPage++;
+      
+      thisHeader.selectedImgs = 
+      Array.from(thisHeader.dom.headerSliderImg)
+        .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+      
       console.log(thisHeader.selectedImgs);
     });
   }
