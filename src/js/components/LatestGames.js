@@ -5,6 +5,17 @@ class LatestGames {
     const thisLG = this;
 
     thisLG.getElement(element);
+    thisLG.handleImgClick();
+  }
+
+  handleImgClick() {
+    const thisLG = this;
+
+    for(const img of thisLG.dom.latesGamesGameImg) {
+      img.addEventListener('click', function() {
+        this.classList.toggle('bigger');
+      });
+    }
   }
 
   getElement(element) {

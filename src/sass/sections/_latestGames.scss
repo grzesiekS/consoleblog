@@ -29,8 +29,9 @@
 
 .latestGames-game_img {
   position: relative;
+  transition: $transiotion-short;
 
-  i {
+  .icon-plus, .icon-minus {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -39,6 +40,10 @@
     opacity: 0;
     color: $latestGames-search-plus-icon-color;
     transition: $transiotion-short;
+  }
+
+  .icon-minus {
+    display: none;
   }
 
   img {
@@ -52,6 +57,25 @@
     i {
       opacity: 0.5;
     }
+  }
+
+  &.bigger {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 80vw;
+    height: 80vh;
+
+    .icon-minus {
+      display: inline-block;
+    }
+
+    .icon-plus {
+      display: none;
+    }
+
   }
 }
 
