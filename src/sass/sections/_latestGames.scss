@@ -1,3 +1,5 @@
+@import "../animations";
+
 .latestGames-content {
   padding: 80px 0;
 }
@@ -29,7 +31,6 @@
 
 .latestGames-game_img {
   position: relative;
-  transition: $transiotion-short;
 
   .icon-plus, .icon-minus {
     position: absolute;
@@ -65,8 +66,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    width: 80vw;
-    height: 80vh;
+    animation: expandImg 1s forwards;
 
     .icon-minus {
       display: inline-block;
