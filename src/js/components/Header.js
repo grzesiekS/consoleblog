@@ -21,13 +21,19 @@ class Header {
     thisHeader.dom.leftButton.addEventListener('click', event => {
       event.preventDefault();
 
-      if(thisHeader.sliderCurrentPage > 0) thisHeader.sliderCurrentPage--;
-
-      thisHeader.selectedImgs = 
+      const currentImgs = 
       Array.from(thisHeader.dom.headerSliderImg)
         .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
 
-      console.log(thisHeader.selectedImgs);
+      thisHeader.handleRemoveActiveClass(currentImgs);
+
+      if(thisHeader.sliderCurrentPage > 0) thisHeader.sliderCurrentPage--;
+
+      const newImgs = 
+      Array.from(thisHeader.dom.headerSliderImg)
+        .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+
+      thisHeader.handleAddActiveClass(newImgs);
     });
   }
 
@@ -37,14 +43,32 @@ class Header {
     thisHeader.dom.rightButton.addEventListener('click', event => {
       event.preventDefault();
       
-      if(thisHeader.sliderCurrentPage < thisHeader.sliderPageCount - 1) thisHeader.sliderCurrentPage++;
-      
-      thisHeader.selectedImgs = 
+      const currentImgs = 
       Array.from(thisHeader.dom.headerSliderImg)
         .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+
+      thisHeader.handleRemoveActiveClass(currentImgs);
+
+      if(thisHeader.sliderCurrentPage < thisHeader.sliderPageCount - 1) thisHeader.sliderCurrentPage++;
       
-      console.log(thisHeader.selectedImgs);
+      const newImgs = 
+      Array.from(thisHeader.dom.headerSliderImg)
+        .splice(thisHeader.sliderCurrentPage*thisHeader.pictureInPage, (thisHeader.sliderCurrentPage + 1)*thisHeader.pictureInPage);
+
+      thisHeader.handleAddActiveClass(newImgs);
     });
+  }
+
+  handleRemoveActiveClass(imgList) {
+    for(const img of imgList) {
+      img.classList.remove('active');
+    }
+  }
+
+  handleAddActiveClass(imgList) {
+    for(const img of imgList) {
+      img.classList.add('active');
+    }
   }
 
   getElement(element) {

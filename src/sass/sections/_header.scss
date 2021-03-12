@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../animations";
 
 .header-navbar {
   text-align: center;
@@ -161,6 +162,7 @@
     &.active {
       display: block;
       box-shadow: 5px 5px 11px 2px $header-img-active-shadowbox-color;
+      animation: appearIn 1s ease-in-out;
     }
   }
 }
