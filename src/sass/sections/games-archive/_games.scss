@@ -12,21 +12,42 @@
 .games_game {
   flex: 45%;
   padding: 0 35px;
+
+  &:hover {
+    cursor: pointer;
+
+    .games_game__img {
+      img {
+        transform: scale(1.3);
+      }
+    }
+
+    .games_game__subtitle {
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      color: $games-description-hover-color;
+    }
+  }
 }
 
 .games_game__img {
   width: 400px;
   height: 200px;
   flex: 60%;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: $transiotion-long;
   }
 }
 
 .games_game__description {
   flex: 30%;
   padding: 0 15px;
+}
+
+.games_game__subtitle {
+  transition: $transiotion-long;
 }
