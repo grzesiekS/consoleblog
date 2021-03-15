@@ -8,6 +8,8 @@ $microsoft-green: #7fba00;
 $ninstendo-red: #fe0016;
 $sony-darkblue: #003791;
 $black: #000;
+$minty-green: #0be881;
+$red-orange: #ff3f34;
 
 /* font-style */
 $font-russo: 'Russo One', sans-serif; //normal text
@@ -25,6 +27,11 @@ $image-slider-width-height: 300px;
 //colors
 $container-boxshadow-color: $black;
 $button-text-color: $exodus-fruit;
+
+//Pagination
+$pagination-link-color: $exodus-fruit;
+$pagination-link-hover-color: $red-orange;
+$pagination-current-color: $minty-green;
 
 /* header section */
 //navbar
