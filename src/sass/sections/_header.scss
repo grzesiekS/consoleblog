@@ -107,9 +107,23 @@
   }
 }
 
+.header-title_container {
+  position: relative;
+  margin-top: 185px;
+  
+  &::before {
+    content: '';
+    top: -185px;
+    position: absolute;
+    background-color: $title-container-bg-color;
+    width: 100%;
+    height: 500%;
+    z-index: -100;
+  }
+}
+
 .header-title {
   text-align: center;
-  margin-top: 20vh;
   font-size: 78px;
   transform: rotate(-20deg);
   letter-spacing: 15px;
@@ -120,20 +134,6 @@
 
   .transform-logo {
     margin: 0 12px 0 0;
-  }
-}
-
-.header-title_container {
-  position: relative;
-  
-  &::before {
-    content: '';
-    top: -20vh;
-    position: absolute;
-    background-color: $title-container-bg-color;
-    width: 100%;
-    height: 500%;
-    z-index: -100;
   }
 }
 
