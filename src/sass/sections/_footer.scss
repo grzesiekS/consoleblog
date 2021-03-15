@@ -1,0 +1,12 @@
+@import "../variables";
+
+.footer {
+  text-align: center;
+  margin-top: 35px;
+  background-color: $footer-bg-color;
+}
+
+.footer-subtitle {
+  padding: 15px;
+  color: $footer-subtitle-color;
+}
