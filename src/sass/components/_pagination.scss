@@ -1,0 +1,35 @@
+.pagination {
+  text-align: center;
+  margin: 45px 0;
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 27px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $pagination-link-color;
+    transition: $transiotion-short;
+
+    &:hover {
+      text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+      color: $pagination-link-hover-color;
+    }
+  }
+}
+
+.pagination_current {
+  color: $pagination-current-color;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
